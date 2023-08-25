@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipableItem" load_steps=3 format=3 uid="uid://bgbpxwxqkfrow"]
+
+[ext_resource type="Script" path="res://Items/equipable_item.gd" id="1_3wuur"]
+[ext_resource type="Texture2D" uid="uid://c22dx7mnp8ydf" path="res://Art/GatherersExterior/Tools/pickaxe_copper.png" id="2_b8isw"]
+
+[resource]
+script = ExtResource("1_3wuur")
+texture = ExtResource("2_b8isw")
+display_name = "Test Item"

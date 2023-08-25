@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://wl6lhhnxlxm1"]
+
+[ext_resource type="Script" path="res://Objects/Pickups/pickup.gd" id="1_rywyq"]
+[ext_resource type="Resource" uid="uid://byigws0s813kk" path="res://Items/Resources/resource_wood.tres" id="2_ynn72"]
+[ext_resource type="Texture2D" uid="uid://cfdrmsdhwymfg" path="res://Art/GatherersExterior/Resources/wood_brown.png" id="3_ysrif"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jsuw8"]
+radius = 6.0
+
+[node name="Pickup_Wood" type="Area2D"]
+z_index = -5
+script = ExtResource("1_rywyq")
+resource_type = ExtResource("2_ynn72")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_ysrif")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jsuw8")
